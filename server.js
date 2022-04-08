@@ -51,7 +51,7 @@ app.get('/api/robots/five', (req, res) => {
         res.sendStatus(400)
         
     }
-    rollbar.error('Someone got five robots.')
+    rollbar.log('Someone got five robots.')
 })
 
 app.post('/api/duel', (req, res) => {
